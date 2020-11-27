@@ -1,0 +1,29 @@
+{
+  "short_name": "Weather App",
+  "name": "WeatherApp",
+  "icons": [
+    {
+      "src": "./cloudy.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png",
+      "purpose": "any maskable"
+
+    },
+    {
+      "src": "./cloudy (256x256).png",
+      "type": "image/png",
+      "sizes": "256x256",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./cloudy (512x512).png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2C3335",
+  "background_color": "#218F76"
+}
