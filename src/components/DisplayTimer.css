@@ -131,7 +131,7 @@ html, body, #root {
       position: absolute;
     }
   }
-  @media only screen and (min-height: 700px){
+  @media only screen and (min-height: 750px){
     .spinner {
       animation: rotate 1.4s linear infinite;
       -webkit-animation: rotate 1.4s linear infinite;

@@ -56,6 +56,11 @@ html, body, #root {
   }
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #1e2432;
+  opacity: 1; /* Firefox */
+}
+
 .search {
   outline: none;
   padding: 20px 7%;
