@@ -58,7 +58,7 @@ const Slider = () =>{
             if(seconds/60 === 1)
             {
                 seconds =0;
-                setMinutes(minutes++);
+                setMinutes(prevState => prevState + 1);
   
                 if(minutes/60 === 1){
                     minutes=0;   
@@ -131,6 +131,7 @@ const Slider = () =>{
     </Helmet>
             <input type="text"className="search"placeholder="Type city name..."value={query}onChange={(e) => setQuery(e.target.value)}onKeyPress={search}/>
             {weather.main && (
+                <>
                 <div className="city">
                     <h2 className="city-name">
                         <span>{weather.name}</span>
@@ -154,11 +155,16 @@ const Slider = () =>{
                     <div className="info">
                         <img className="city-icon" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={weather.weather[0].description} />
                         <p>{weather.weather[0].description}
-                        
                         </p>
+                       
                     </div>
+                    <p className="para">> Slide to stopwatch</p>
                 </div>  
+                
+                </>
+                
             )}
+         
         </div>
 
         {/* 2nd slide */}

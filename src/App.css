@@ -40,13 +40,21 @@ html, body, #root {
 }
 
 .main-container {
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
+@media only screen and (max-width: 600px){
+  .main-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 
 .search {
   outline: none;
@@ -76,7 +84,8 @@ html, body, #root {
 }
 @media only screen and (max-width: 600px){
   .city{
-      background:transparent;   
+      background:transparent;
+     
   }
 }
 
@@ -98,8 +107,14 @@ p {
   color: #1e2432;
    margin-top: 12px;   
 }
+
 @media only screen and (max-width: 600px){
   .more span{
+      color: grey;
+  }
+}
+@media only screen and (max-width: 600px){
+  .night span{
       color: #1e2432;
   }
 }
@@ -149,4 +164,32 @@ p {
   }
 }
 
+.para {
+  position: absolute;
+  font-family: sans-serif;
+  display: flex;
+  margin-top: 40em;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  justify-content: center;
+  align-items: center;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+} 
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
 

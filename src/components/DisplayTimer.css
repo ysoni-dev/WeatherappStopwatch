@@ -22,8 +22,10 @@ html, body, #root {
 
 @media only screen and (max-width: 600px){
   .maincontainer{
+    
       background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), 
-      url("swatch-mob.jpg");
+      url("https://i.pinimg.com/originals/9a/66/18/9a6618e4e19baa349cf36c561ccdc4d3.jpg");
+      background-size: cover;
   }
 }
 
@@ -129,6 +131,44 @@ html, body, #root {
       position: absolute;
     }
   }
+  @media only screen and (min-height: 700px){
+    .spinner {
+      animation: rotate 1.4s linear infinite;
+      -webkit-animation: rotate 1.4s linear infinite;
+      -moz-animation: rotate 1.4s linear infinite alternate;
+      /* -webkit-animation: glow 1s ease-in-out infinite alternate; */
+      width:240px;
+      height:280px;
+      filter: blur(0px);
+      margin-top: 10%;
+      position: absolute;
+    }
+  }
+  /* @media only screen and (max-height: 700px){
+    .spinner {
+      animation: rotate 1.4s linear infinite;
+      -webkit-animation: rotate 1.4s linear infinite;
+      -moz-animation: rotate 1.4s linear infinite alternate;
+  
+      width:240px;
+      height:280px;
+      filter: blur(0px);
+      margin-top: 4%;
+      position: absolute;
+    }
+  } */
+  /* @media only screen and (max-height: 900px){
+    .spinner {
+      animation: rotate 1.4s linear infinite;
+      -webkit-animation: rotate 1.4s linear infinite;
+      -moz-animation: rotate 1.4s linear infinite alternate;
+      width:240px;
+      height:280px;
+      filter: blur(0px);
+      margin-top: 12%;
+      position: absolute;
+    }
+  } */
   
   .spinner-dot {
     width:174px;
